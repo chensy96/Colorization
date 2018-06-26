@@ -1,0 +1,11 @@
+The best colorization results:
+
+Original	Color Source 	 K	Pairs
+stadiumbw	stadiumcl	 4	2000
+beach		bwb		 3       100
+treebw1		treecl		 3	 100
+nycbw		nyc		 3	 100/1000
+
+How I automatically "matched" clusters: I used the "disIntensity" method, which was created in part to match pixels with
+the nearest mean, to calculate and to find the shortest distance between each mean of each cluster of color and gray images, then I 
+used "setClassNumber" to connect the index of the correspond gray cluster with the color cluster. 
